@@ -31,15 +31,15 @@ def fizzbuzz(num):
 pass
 
 def calculator(operation, num1, num2):
-    match operation:
-        case "+":
-            return num1 + num2
-        case "-":
-            return num1 - num2
-        case "*":
-            return num1 * num2
-        case "/":
-            return num1/num2
-        case _:
-            print("Invalid operation!")
-    pass
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        return num1 / num2
+    else:
+        print("Invalid operation!")
+        return None
+        
